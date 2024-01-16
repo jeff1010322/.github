@@ -1,0 +1,20 @@
+version: 0.0.1
+achievements:
+  - achievement:
+      name: Shooting Star
+      icon: https://raw.githubusercontent.com/jeff1010322/.github/main/.vaunt/shooting_star.jpeg
+      description: Awarded for starring one of jeff1010322's repositories!
+      triggers:
+        - trigger:
+            actor: author
+            action: star
+            condition: starred = true
+  - achievement:
+      name: Every Bit Counts
+      icon: https://raw.githubusercontent.com/jeff1010322/.github/main/.vaunt/every_bit_counts.jpeg
+      description: Awarded for contributing to one of jeff1010322's repositories!
+      triggers:
+        - trigger:
+            actor: author
+            action: commit
+            condition: count() >= 1
